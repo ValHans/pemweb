@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta voluptate neque nulla temporibus iste esse eaque, totam sunt impedit ut voluptas debitis a incidunt nam odio odit perferendis, cumque voluptatibus.</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus et a dicta exercitationem aspernatur eius vitae nostrum consectetur vero corrupti mollitia, velit nobis magni. Nam quaerat pariatur dicta cumque maiores.</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis omnis facere totam assumenda sit, expedita impedit temporibus corrupti molestias unde consectetur optio tenetur laboriosam animi libero placeat modi reprehenderit.</p>
+    
+    <script>
+        var paragraf = document.getElementsByClassName("paragraf");
+        setInterval(function () {
+            paragraf[0].style.color = "red";
+            paragraf[1].style.color = "green";
+            paragraf[2].style.color = "blue";
+
+            setTimeout(function () {
+                paragraf[0].style.color = "black";
+                paragraf[1].style.color = "black";
+                paragraf[2].style.color = "black";
+            }, 500)
+        }, 1000);
+    </script>
+</body>
+</html>
