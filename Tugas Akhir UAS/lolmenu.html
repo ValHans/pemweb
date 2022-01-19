@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-70x70.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="lolmenu.css">
+    <title>League of Legend-Menu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <a href="web.html"><img src="title.png" alt="title"></a>
+        </div>
+        <div class="bg1">
+            <img src="wrbg.png" alt="LeagueofLegend" width="1536" height="850">
+        </div>
+        <div class="kotak1">
+            <img src="wr.png" alt="game" width="100%" height="100%">
+        </div>
+        <div class="idbox">
+            <p>Silahkan isi ID RIOT anda</p>
+            <input type="text" placeholder="Masukan ID RIOT Anda">
+            <p>(Contoh: Westbourne#SEA)</p>
+        </div>
+        <div class="listbox">
+            <p>Pilih Nominal Anda</p>
+            <div class="dalamList1">
+                <div class="kotakDlist"></div>
+                <div class="kotakDlist"></div>
+                <div class="kotakDlist"></div>
+            </div>
+            <div class="dalamList2">
+                <div class="kotakDlist"></div>
+                <div class="kotakDlist"></div>
+                <div class="kotakDlist"></div>
+            </div>
+            <div class="dalamList3">
+                <div class="kotakDlist"></div>
+                <div class="kotakDlist"></div>
+                <div class="kotakDlist"></div>
+            </div>
+        </div>
+        <div class="paymenu">
+            <p>Pilih Pembayaran</p>
+            <div class="dalamPM">
+                <div class="kotakDPM"></div>
+                <div class="kotakDPM"></div>
+                <div class="kotakDPM"></div>
+                <div class="kotakDPM"></div>
+                <div class="kotakDPM"></div>
+                <div class="kotakDPM"></div>
+                <div class="kotakDPM"></div>
+            </div>
+        </div>
+        <div class="emailbox">
+            <p>Bayar!</p>
+            <input type="email" placeholder="Masukan Email Anda">
+            <button type="button" id="btn">Bayar Sekarang</button>
+        </div>
+        <footer>
+            Copyright &copy; by YourGamingStore
+        </footer>
+    </div>
+</body>
+<script src="dist/sweetalert2.all.min.js"></script>
+<script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function(){
+        Swal.fire({
+            title: 'Payment',
+            text: 'Berhasil',
+            icon: 'success'
+        })
+    });
+</script>
+</html>
